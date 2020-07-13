@@ -32,6 +32,8 @@ a {
   text-decoration: none;
 }
 
+/* ** --  ## Features ##  -- ** */
+
 .header {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -175,19 +177,46 @@ a {
   font-size: 17px;
   line-height: 32px;
   margin-top: 30px;
+  position: relative;
+  transition: 0.3s;
+}
+.features__btn::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+.features__btn:hover::before {
+  width: 100px;
+}
+.features__btn:hover {
+  border-color: transparent;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 .starting__btn {
   border: 1px solid #262f32;
   color: #262f32;
   padding: 9px 42px;
 }
+.starting__btn::before {
+  background-color: #262f32;
+}
 .dummy__btn {
   border: 1px solid #fff;
   color: #fff;
   padding: 9px 45px;
 }
+.dummy__btn::before {
+  background-color: #fff;
+}
 
 /* ** --  ## Footer ##  -- ** */
+
 .footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -336,7 +365,8 @@ a {
   transition: 0.2s;
 }
 .footer__form-btn:hover {
-  background-color: #fff;
+  background-color: transparent;
+  color: #fff;
 }
 .footer__form-btn:active {
   transform: translateY(2px);
@@ -354,6 +384,11 @@ a {
   height: 45px;
   border-radius: 5px;
   position: relative;
+  transition: 0.2s;
+}
+.footer__social-links a:hover {
+  border-radius: 50%;
+  transform: translateY(-3px);
 }
 .footer__social-facebook {
   background-color: #345bb4;
@@ -375,6 +410,7 @@ a {
 }
 
 /* ** --  ## Hamburger Menu ##  -- ** */
+
 .hamburger {
   width: 35px;
   height: 30px;
@@ -422,7 +458,7 @@ a {
   top: 47px;
   left: 43px;
   z-index: 3;
-  opacity: 0.2;
+  opacity: 0;
   cursor: pointer;
 }
 .hamburger__toggler:hover + .hamburger > .hamburger__item {
