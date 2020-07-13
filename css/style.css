@@ -477,23 +477,23 @@ a {
 }
 .hamburger__menu-item:first-child {
   transition-delay: 0.2s;
-  background-color: #d11141;
+  background-color: #fff6e9;
 }
 .hamburger__menu-item:nth-child(2) {
   transition-delay: 0.3s;
-  background-color: #00b159;
+  background-color: #ffefd7;
 }
 .hamburger__menu-item:nth-child(3) {
   transition-delay: 0.4s;
-  background-color: #00aedb;
+  background-color: #fffef9;
 }
 .hamburger__menu-item:nth-child(4) {
   transition-delay: 0.5s;
-  background-color: #f37735;
+  background-color: #e3f0ff;
 }
 .hamburger__menu-item:nth-child(5) {
   transition-delay: 0.6s;
-  background-color: #ffc425;
+  background-color: #d2e7ff;
 }
 .hamburger__toggler:checked ~ .hamburger__menu-wrapper .hamburger__menu-item {
   transform: translateX(0);
